@@ -4,7 +4,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 // Importe as imagens dos seus projetos
-import tamataskImg from "../assets/img/projects/tamatask.jpg";
+import tamataskImg from "../assets/img/projects/tamatask square.jpg";
 import projectImg2 from "../assets/img/projects/project-2.png"; // Use uma imagem de placeholder se não tiver
 
 const projectData = [

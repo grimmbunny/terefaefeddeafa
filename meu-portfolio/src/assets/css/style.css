@@ -3011,15 +3011,16 @@ p {
 	overflow: hidden;
 	display: flex;
 	gap: 1.5rem;
+	margin-top: 24px;
 }
 
 .skillset-card .tools-slider {
 	display: flex;
+	flex-wrap: wrap;
 	flex-shrink: 0;
 	gap: 1rem;
 	animation: scrollXTools 50s linear infinite;
-	width: fit-content;
-	/* Adicione esta linha */
+	justify-content: flex-start;
 }
 
 .skillset-card .tools-main:hover .tools-slider {

@@ -4,15 +4,14 @@ const tools = [
   { name: "Photoshop", icon: "assets/img/icons/photoshop.svg" },
   { name: "InDesign", icon: "assets/img/icons/indesign.svg" },
   { name: "Illustrator", icon: "assets/img/icons/illustrator.svg" },
-  { name: "After Effects", icon: "assets/img/icons/after-effects.svg" },
+  { name: "Creative Cloud", icon: "assets/img/icons/adobe.svg" },
   { name: "Figma", icon: "assets/img/icons/figma.svg" },
   { name: "CSS3", icon: "assets/img/icons/css.svg" },
   { name: "HTML5", icon: "assets/img/icons/html.svg" },
-  { name: "JavaScript", icon: "assets/img/icons/js.svg" },
-  { name: "Tailwind", icon: "assets/img/icons/tailwind.svg" },
+  { name: "JavaScript", icon: "assets/img/icons/javascript.svg" },
+  { name: "Vite", icon: "assets/img/icons/vite.svg" },
   { name: "React", icon: "assets/img/icons/react.svg" },
   { name: "GitHub", icon: "assets/img/icons/github.svg" },
-  { name: "Sass", icon: "assets/img/icons/sass.svg" },
 ];
 
 const softSkills = [
