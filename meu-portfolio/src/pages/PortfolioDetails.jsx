@@ -50,7 +50,7 @@ function PortfolioDetailsPage() {
                   </div>
                   {/* Você pode adicionar mais seções como "Challenges" e "Results" aqui */}
                   <div className="prev-and-next-btn">
-                    <Link to="/portfolio.html" className="btn btn-prev">
+                    <Link to="/portfolio" className="btn btn-prev">
                       Voltar ao Portfólio
                     </Link>
                   </div>

@@ -8,7 +8,7 @@ const articles = [
     id: 1,
     title: "Want To Upgrade Your Brain? Stop Doing These 7 Things",
     image: "assets/img/blog/blog-img-1.jpg",
-    link: "/article.html",
+    link: "/article",
     category: "Development",
     readTime: "15 min",
     date: "Nov 6, 2023",

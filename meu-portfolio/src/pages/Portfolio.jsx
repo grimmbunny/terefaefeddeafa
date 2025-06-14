@@ -8,21 +8,21 @@ const projectsData = [
     title: "TamaTask - Produtividade Gamificada",
     category: "Web App | UI/UX & DEV",
     image: "assets/img/projects/tamatask.jpg",
-    link: "/portfolio-details-tamatask.html",
+    link: "/portfolio-details-tamatask",
   },
   {
     id: 2,
     title: "AIMug - AI Writing Application",
     category: "Product Design | Application",
     image: "assets/img/projects/project-2.png",
-    link: "/portfolio-details.html",
+    link: "/portfolio-details",
   },
   {
     id: 3,
     title: "FlowArch - Architecture Website",
     category: "UI UX Design | Development",
     image: "assets/img/projects/project-3.png",
-    link: "/portfolio-details.html",
+    link: "/portfolio-details",
   },
 ];
 

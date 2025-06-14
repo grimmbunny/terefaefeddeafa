@@ -105,7 +105,7 @@ function TamaTaskDetailsPage() {
                     </ul>
                   </div>
                   <div className="prev-and-next-btn">
-                    <Link to="/portfolio.html" className="btn btn-prev">
+                    <Link to="/portfolio" className="btn btn-prev">
                       Voltar ao Portfólio
                     </Link>
                   </div>
