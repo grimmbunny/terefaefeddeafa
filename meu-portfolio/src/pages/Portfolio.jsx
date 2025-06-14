@@ -82,6 +82,32 @@ function PortfolioPage() {
           </div>
         </div>
       </div>
+      <div className="work-together-slider">
+        <div className="slider-main d-flex gap-4 align-items-center">
+          <div className="slider-item">
+            <Link to="/contact">Let's 👋 Work Together</Link>
+            <Link to="/contact">Let's 👋 Work Together</Link>
+          </div>
+          <div className="slider-item">
+            <Link to="/contact">Let's 👋 Work Together</Link>
+            <Link to="/contact">Let's 👋 Work Together</Link>
+          </div>
+        </div>
+      </div>
+      <div className="background-shapes">
+        <div className="shape-1 common-shape">
+          <img src="assets/img/bg/banner-shape-1.png" alt="banner-shape-1" />
+        </div>
+        <div className="shape-2 common-shape">
+          <img src="assets/img/bg/banner-shape-1.png" alt="banner-shape-1" />
+        </div>
+        <div className="threed-shape-1 move-with-cursor" data-value="1">
+          <img src="assets/img/bg/object-3d-1.png" alt="object-3d-1" />
+        </div>
+        <div className="threed-shape-2 move-with-cursor" data-value="1">
+          <img src="assets/img/bg/object-3d-2.png" alt="object-3d-2" />
+        </div>
+      </div>
     </section>
   );
 }
