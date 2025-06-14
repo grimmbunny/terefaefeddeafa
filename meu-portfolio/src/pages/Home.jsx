@@ -1,6 +1,6 @@
 import React from "react";
 
-// Importe os componentes que vamos criar
+// (suas outras importações de componentes)
 import ProfileCard from "../components/ProfileCard";
 import TimelineCard from "../components/TimelineCard";
 import SkillsetCard from "../components/SkillsetCard";
@@ -18,15 +18,16 @@ function HomePage() {
             <ProfileCard />
           </div>
 
-          {/* Coluna 2: Cards do meio */}
-          <div className="col-xl-4">
-            <div className="row g-4">
-              <div className="col-lg-12">
-                <TimelineCard />
-              </div>
-              <div className="col-lg-12">
-                <SkillsetCard />
-              </div>
+          {/* Coluna 2: Cards do meio - CORREÇÃO FINAL */}
+          {/* Adicionamos 'gap-4' para criar o espaçamento vertical entre os cards */}
+          <div className="col-xl-4 d-flex flex-column gap-4">
+            {/* Wrapper da Timeline para fazê-la crescer */}
+            <div className="flex-grow-1 d-flex">
+              <TimelineCard />
+            </div>
+            {/* Wrapper do Skillset */}
+            <div>
+              <SkillsetCard />
             </div>
           </div>
 

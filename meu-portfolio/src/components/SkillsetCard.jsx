@@ -1,17 +1,29 @@
+// ... (mantenha as importações e as listas como estão)
 import React from "react";
 
+// --- ÍCONES DAS FERRAMENTAS ---
+import photoshopIcon from "../assets/img/icons/photoshop.svg";
+import indesignIcon from "../assets/img/icons/indesign.svg";
+import illustratorIcon from "../assets/img/icons/illustrator.svg";
+import adobeIcon from "../assets/img/icons/adobe.svg";
+import figmaIcon from "../assets/img/icons/figma.svg";
+import cssIcon from "../assets/img/icons/css.svg";
+import htmlIcon from "../assets/img/icons/html.svg";
+import javascriptIcon from "../assets/img/icons/javascript.svg";
+import viteIcon from "../assets/img/icons/vite.svg";
+import reactIcon from "../assets/img/icons/react.svg";
+
 const tools = [
-  { name: "Photoshop", icon: "assets/img/icons/photoshop.svg" },
-  { name: "InDesign", icon: "assets/img/icons/indesign.svg" },
-  { name: "Illustrator", icon: "assets/img/icons/illustrator.svg" },
-  { name: "Creative Cloud", icon: "assets/img/icons/adobe.svg" },
-  { name: "Figma", icon: "assets/img/icons/figma.svg" },
-  { name: "CSS3", icon: "assets/img/icons/css.svg" },
-  { name: "HTML5", icon: "assets/img/icons/html.svg" },
-  { name: "JavaScript", icon: "assets/img/icons/javascript.svg" },
-  { name: "Vite", icon: "assets/img/icons/vite.svg" },
-  { name: "React", icon: "assets/img/icons/react.svg" },
-  { name: "GitHub", icon: "assets/img/icons/github.svg" },
+  { name: "Photoshop", icon: photoshopIcon },
+  { name: "InDesign", icon: indesignIcon },
+  { name: "Illustrator", icon: illustratorIcon },
+  { name: "Creative Cloud", icon: adobeIcon },
+  { name: "Figma", icon: figmaIcon },
+  { name: "CSS3", icon: cssIcon },
+  { name: "HTML5", icon: htmlIcon },
+  { name: "JavaScript", icon: javascriptIcon },
+  { name: "Vite", icon: viteIcon },
+  { name: "React", icon: reactIcon },
 ];
 
 const softSkills = [
@@ -25,19 +37,16 @@ const softSkills = [
 
 function SkillsetCard() {
   return (
-    <div className="card skillset-card">
+    // Adicionamos a classe w-100 para garantir que ele preencha a largura do container flex
+    <div className="card skillset-card w-100">
       <div className="card-body">
         <h3 className="card-title">Skillset</h3>
         <div className="tools-main mt-24">
           <div className="tools-slider">
-            {/* Duplicamos a lista para o efeito de loop infinito com CSS */}
             {[...tools, ...tools].map((tool, index) => (
               <div className="expertise-item" key={index}>
                 <div className="image text-center">
                   <img src={tool.icon} alt={tool.name} />
-                </div>
-                <div className="text">
-                  <h4 className="title">{tool.name}</h4>
                 </div>
               </div>
             ))}
@@ -45,7 +54,6 @@ function SkillsetCard() {
         </div>
         <div className="skills-main">
           <div className="skills-slider">
-            {/* Duplicamos a lista para o efeito de loop infinito com CSS */}
             {[...softSkills, ...softSkills].map((skill, index) => (
               <span className="skill-item" key={index}>
                 {skill}

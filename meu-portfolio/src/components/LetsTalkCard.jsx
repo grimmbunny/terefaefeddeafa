@@ -5,24 +5,16 @@ function LetsTalkCard() {
   return (
     <div className="card lets-talk-together-card" style={{ height: "100%" }}>
       <div className="card-body d-flex flex-column">
-        {/* Seção de texto rolante */}
-        <div className="scrolling-info">
-          <div className="slider-item">
-            <p>
-              Available For Hire 🚀 Crafting Digital Experiences 🎨 Available
-              For Hire 🚀 Crafting Digital Experiences 🎨
-            </p>
-          </div>
-        </div>
+        {/* A SEÇÃO DE TEXTO ROLANTE FOI REMOVIDA DAQUI */}
 
         {/* Título e link principal */}
         <div className="flex-grow-1">
           <h3 className="card-title">
-            Vamos criar<span className="d-block">algo juntos?</span>
+            Para dúvidas ou orçamentos: <span className="d-block">contato</span>
           </h3>
           <Link className="link-btn" to="/contact">
             {" "}
-            Let's Talk
+            Mensagem
             <svg
               className="icon"
               width="20"
@@ -49,7 +41,7 @@ function LetsTalkCard() {
           </Link>
         </div>
 
-        {/* Informações de contato adicionadas */}
+        {/* Informações de contato */}
         <div className="contact-info-wrap">
           <a
             href="mailto:muzzastudio@outlook.com"

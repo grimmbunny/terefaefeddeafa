@@ -1,3 +1,5 @@
+// src/components/ProjectsCard.jsx
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
@@ -5,7 +7,7 @@ import "yet-another-react-lightbox/styles.css";
 
 // Importe as imagens dos seus projetos
 import tamataskImg from "../assets/img/projects/tamatask square.jpg";
-import projectImg2 from "../assets/img/projects/project-2.png"; // Use uma imagem de placeholder se não tiver
+// import projectImg2 from "../assets/img/projects/project-2.png"; // Use uma imagem de placeholder se não tiver
 
 const projectData = [
   {
@@ -13,12 +15,14 @@ const projectData = [
     image: tamataskImg,
     category: "Web App",
     link: "/portfolio-details-tamatask",
+    title: "TamaTask - Produtividade Gamificada",
   },
   {
     id: 2,
-    image: projectImg2,
+    image: tamataskImg,
     category: "Product Design",
     link: "/portfolio-details",
+    title: "FlowArch - Architecture Website",
   },
 ];
 
@@ -33,7 +37,6 @@ function ProjectsCard() {
 
   return (
     <>
-      {/* O card principal agora ocupa 100% da altura da coluna */}
       <div className="card card-projects" style={{ height: "100%" }}>
         <div className="card-body d-flex flex-column">
           <h3 className="card-title">
@@ -75,28 +78,34 @@ function ProjectsCard() {
           </h3>
           <div className="projects-main mt-24 flex-grow-1">
             <div className="row g-4">
-              {/* Mapeia os dados do projeto para criar a lista vertical */}
               {projectData.map((project, index) => (
                 <div className="col-lg-12" key={project.id}>
                   <div className="project-item">
-                    <div className="image">
-                      <img
-                        src={project.image}
-                        alt={project.category}
-                        className="img-fluid w-100"
-                      />
-                      <button
-                        onClick={() => openLightboxOn(index)}
-                        className="gallery-popup full-image-preview"
-                      >
-                        <i className="fas fa-plus"></i>
-                      </button>
-                      <div className="info">
-                        <Link to={project.link} className="category">
-                          {project.category}
-                        </Link>
+                    {/* Link envolvendo toda a imagem para melhor usabilidade */}
+                    <Link to={project.link} className="project-link">
+                      <div className="image">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="img-fluid w-100"
+                        />
+                        {/* Overlay para o efeito de hover */}
+                        <div className="hover-overlay">
+                          <div className="hover-content">
+                            <h4 className="title">{project.title}</h4>
+                            <span className="category">{project.category}</span>
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
+                    {/* Botão de lightbox separado */}
+                    <button
+                      onClick={() => openLightboxOn(index)}
+                      className="gallery-popup full-image-preview"
+                      aria-label="Ver imagem"
+                    >
+                      <i className="fas fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               ))}

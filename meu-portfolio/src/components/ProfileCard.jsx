@@ -16,11 +16,11 @@ function ProfileCard() {
             Designer Fullstack (Design + Código)
           </h4>
           <p>
-            Sou uma designer e desenvolvedora do Rio de Janeiro com foco em
-            criar soluções digitais que unem estética, funcionalidade e
-            tecnologia. Minha carreira é dedicada a explorar a sinergia entre o
-            design criativo e o desenvolvimento técnico, atuando de ponta a
-            ponta no ciclo de vida de um produto.
+            Sou designer e desenvolvedora do Rio de Janeiro com foco em criar
+            soluções digitais que unem estética, funcionalidade e tecnologia.
+            Minha carreira é dedicada a explorar a sinergia entre o design
+            criativo e o desenvolvimento técnico, atuando de ponta a ponta no
+            ciclo de vida de um produto.
           </p>
           <p>
             Formada em Design Digital (PUC-Rio), pós-graduada em UI/UX (Unyleya)

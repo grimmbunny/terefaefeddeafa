@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ProfileCard from "../components/ProfileCard";
 
 // Componente para o Acordeão (FAQ)
@@ -45,9 +45,22 @@ const AccordionItem = ({ id, title, content, parent, show = false }) => {
   );
 };
 
+// Componente para cada caixa de serviço
+const ServiceBox = ({ icon, title, services }) => (
+  <div className="service-item-box">
+    <div className="icon">{icon}</div>
+    <h4 className="title">{title}</h4>
+    <ul className="info-list">
+      {services.map((service, index) => (
+        <li key={index}>{service}</li>
+      ))}
+    </ul>
+  </div>
+);
+
 function ServicesPage() {
   return (
-    <section className="content-box-area mt-4">
+    <section className="content-box-area mt-4 services-page">
       <div className="container">
         <div className="row g-4">
           <div className="col-xl-4">
@@ -74,8 +87,59 @@ function ServicesPage() {
                   </div>
                 </div>
 
-                <div className="services-area-main">
-                  {/* ... Cole aqui a seção de serviços do services.html ... */}
+                {/* Grid de Serviços */}
+                <div className="row g-4">
+                  <div className="col-md-6 d-flex">
+                    <ServiceBox
+                      icon={<i className="fas fa-palette"></i>}
+                      title="UI/UX & Product Design"
+                      services={[
+                        "Otimização de fluxos, testes e análise de dados.",
+                        "Pesquisa de Usuário e Jornadas",
+                        "Wireframes e Fluxos de Navegação",
+                        "Protótipos Interativos (Figma)",
+                        "Design de Interface (UI)",
+                        "Design Systems",
+                      ]}
+                    />
+                  </div>
+                  <div className="col-md-6 d-flex">
+                    <ServiceBox
+                      icon={<i className="fas fa-code"></i>}
+                      title="Desenvolvimento Front-End"
+                      services={[
+                        "Landing Pages e Hotsites",
+                        "Sites Institucionais e Portfólios",
+                        "Conversão de Design (Figma) para Código",
+                        "Componentização em React",
+                        "Manutenção e otimização de código",
+                      ]}
+                    />
+                  </div>
+                  <div className="col-md-6 d-flex">
+                    <ServiceBox
+                      icon={<i className="fas fa-lightbulb"></i>}
+                      title="Identidade Visual & Branding"
+                      services={[
+                        "Criação de Logotipos",
+                        "Manual de Marca (Branding)",
+                        "Paleta de Cores e Tipografia",
+                        "Templates para Redes Sociais",
+                      ]}
+                    />
+                  </div>
+                  <div className="col-md-6 d-flex">
+                    <ServiceBox
+                      icon={<i className="fas fa-pencil-ruler"></i>}
+                      title="Design Gráfico & Arte Digital"
+                      services={[
+                        "Peças para Redes Sociais",
+                        "Diagramação de E-books e Catálogos",
+                        "Ilustrações Personalizadas",
+                        "Modelagem 3D Básica (Blender)",
+                      ]}
+                    />
+                  </div>
                 </div>
 
                 <div className="frequently-asked-questions mt-5">
@@ -101,6 +165,27 @@ function ServicesPage() {
                       parent="accordionFAQ"
                     />
                   </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card Final de Contato */}
+            <div className="card content-box-card mt-4">
+              <div className="card-body contact-final-card">
+                <h3>
+                  Para dúvidas ou orçamentos: <strong>contato</strong>
+                </h3>
+                <div className="contact-info">
+                  <a href="mailto:muzzastudio@outlook.com">
+                    <i className="fas fa-envelope"></i> muzzastudio@outlook.com
+                  </a>
+                  <a
+                    href="https://wa.me/5521967332761"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-whatsapp"></i> +55 (21) 96733-2761
+                  </a>
                 </div>
               </div>
             </div>
