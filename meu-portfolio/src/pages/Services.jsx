@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProfileCard from "../components/ProfileCard";
 
 // Componente para o Acordeão (FAQ)
@@ -169,27 +170,33 @@ function ServicesPage() {
               </div>
             </div>
 
-            {/* Card Final de Contato */}
-            <div className="card content-box-card mt-4">
-              <div className="card-body contact-final-card">
-                <h3>
-                  Para dúvidas ou orçamentos: <strong>contato</strong>
-                </h3>
-                <div className="contact-info">
-                  <a href="mailto:muzzastudio@outlook.com">
-                    <i className="fas fa-envelope"></i> muzzastudio@outlook.com
-                  </a>
-                  <a
-                    href="https://wa.me/5521967332761"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-whatsapp"></i> +55 (21) 96733-2761
-                  </a>
+              <div className="work-together-slider">
+                <div className="slider-main d-flex gap-4 align-items-center">
+                  <div className="slider-item">
+                    <Link to="/contact">Vamos trabalhar juntos? 👋</Link>
+                    <Link to="/contact">Vamos trabalhar juntos? 👋</Link>
+                  </div>
+                  <div className="slider-item">
+                    <Link to="/contact">Vamos trabalhar juntos? 👋</Link>
+                    <Link to="/contact">Vamos trabalhar juntos? 👋</Link>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
+        </div>
+      </div>
+      <div className="background-shapes">
+        <div className="shape-1 common-shape">
+          <img src="assets/img/bg/banner-shape-1.png" alt="banner-shape-1" />
+        </div>
+        <div className="shape-2 common-shape">
+          <img src="assets/img/bg/banner-shape-1.png" alt="banner-shape-1" />
+        </div>
+        <div className="threed-shape-1 move-with-cursor" data-value="1">
+          <img src="assets/img/bg/object-3d-1.png" alt="object-3d-1" />
+        </div>
+        <div className="threed-shape-2 move-with-cursor" data-value="1">
+          <img src="assets/img/bg/object-3d-2.png" alt="object-3d-2" />
         </div>
       </div>
     </section>
